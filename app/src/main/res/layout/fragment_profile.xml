@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#a2d2ff"
+    tools:context=".ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ПРОФИЛЬ РАБОТНИКА"
+            android:textSize="24pt"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            android:src="@drawable/user"/>
+
+        <EditText
+            android:id="@+id/surnameET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text"
+            android:textSize="14pt"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:text="dgdfg"
+            app:layout_constraintTop_toBottomOf="@id/avatar_image"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text"
+            android:textSize="14pt"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:text="dgdfg"
+            app:layout_constraintTop_toBottomOf="@id/surnameET"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text"
+            android:textSize="14pt"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:text="dgdfg"
+            app:layout_constraintTop_toBottomOf="@id/nameET"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/loginET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text"
+            android:textSize="14pt"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:text="dgdfg"
+            app:layout_constraintTop_toBottomOf="@id/usernameET"
+            android:layout_margin="20dp"/>
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_text"
+            android:textSize="14pt"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:text="dgdfg"
+            app:layout_constraintTop_toBottomOf="@id/loginET"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwordET"
+            android:layout_margin="45dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:backgroundTint="#43A047"
+            android:text="ИЗМЕНИТЬ"/>
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwordET"
+            android:layout_margin="45dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:backgroundTint="#D81B60"
+            android:text="ВЫЙТИ"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

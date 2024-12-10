@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_above="@id/sendMessageLayout"
+        android:id="@+id/recycler"/>
+
+    <RelativeLayout
+        android:id="@+id/sendMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/sendFile"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clip"/>
+
+        <ImageButton
+            android:id="@+id/sendVoice"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sendFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voice"/>
+
+        <EditText
+            android:id="@+id/messageEd"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:hint="Введите сообщение"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sendVoice"
+            android:layout_toLeftOf="@id/sendMessage"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/sendMessage"
+            android:padding="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
